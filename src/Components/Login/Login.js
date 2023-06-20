@@ -32,7 +32,7 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://localhost:3000/api/auth/Login', login)
+    axios.post('http://3.108.252.16:3000/api/auth/Login', login)
 
     .then(res => {
      localStorage.setItem('token', res.data.token); 
