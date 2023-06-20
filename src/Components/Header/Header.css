@@ -1,0 +1,109 @@
+body{
+    background-image: none;
+    background-color: none;
+}
+.LogOut{
+    text-decoration: none;
+    background-color: transparent;
+}
+.Header{
+    height:80px;
+    display: flex;
+    background-color:#FAFAFA;
+    align-items: center;
+    position: sticky;
+    top:10px;
+    z-index:100;
+} 
+.Header_Logo{
+    width:100px;
+    object-fit: contain;
+    margin:0 40px;
+    margin-top: 4px;
+}
+.SearchIcon{
+    height:20px !important;
+    color:black;
+    margin-top: 10%;
+
+}
+.Header_searchInput{
+    height:10px;
+    padding: 10px;
+    border-radius: 5px;
+    /* border: none; */
+    margin-top: 10%;
+    width:500px;
+}
+.Header_search{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    width: 300px;
+    border-radius: 24px;
+}
+.Header_nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+.HeaderOption{
+    display:flex;
+    font-size:large;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-left: 25px;
+    align-items: center;
+    color: black;
+    height: 20px !important;
+
+}
+.OptionSix,
+.OptionFive{
+    border-radius: 5px;
+    /* margin:10px; */
+    padding: 10px;
+    height:20px !important;
+    color: white;
+    background-color:rgba(57,62,70,255);
+}
+
+.dropdown{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    /* width:200%; */
+    margin-top: 25%;
+    border:1px solid gray;
+    border-radius: 4px;
+}
+.dropdown:empty{
+    border:none;
+}
+.dropdown-row{
+    cursor: pointer;
+    text-align: start;
+    width: 200%;
+    margin-top: 15%;
+    margin:2px 0;
+}
+.search-inner{
+    display: flex;
+    height:10px;
+}
+.btnss{
+    height:35px;
+    padding: 7px;
+    border-radius: 4px;
+    margin-top: 10%;
+
+}
+.main{
+    text-align: left;
+    color: black;
+    padding: 0%;
+    margin : 1px;
+
+}
+.link{
+    text-decoration: none;
+}
