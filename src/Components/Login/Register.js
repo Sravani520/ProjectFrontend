@@ -20,7 +20,7 @@ export default function Register() {
       console.log(e)
       e.preventDefault();
       console.log(e)
-      axios.post(`http://3.108.252.16:3000/api/auth/Register`, register)
+      axios.post(`http://localhost:3000/api/auth/Register`, register)
       .then(res => { alert(res.data); 
         navigate('/') })
       .catch(err => alert(err.response.data));
@@ -131,9 +131,12 @@ export default function Register() {
           required
           />
        </div>
-        <div className='form-details'>
-            <input className='regisbtn' type="submit" value="Register"/>
+       <div className='form-details'>
+            <button >
+              Register
+            </button>
         </div>
+        
     </form>
     
       <Link to="/" variant="body2" className='relink'>

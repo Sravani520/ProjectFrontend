@@ -7,32 +7,14 @@ import axios from 'axios';
 export default function Login() {
   const navigate = useNavigate();
   const [login, setlogin] = useState({ username: '', password: '' });
-  
-  // const userRef = useRef();
-  // const errRef= useRef();
-  
-  // const[user,setUser]=useState('');
-  // const[pwd,setPwd]=useState('');
-  
-  // const [errMsg, setErrMsg]=useState('');
-  // const[success, setSuccess]=useState(false);
-
-  // useEffect(()=>{
-  //   userRef.current.focus();
-  // },[])
-  
-  // useEffect(()=>{
-  //   setErrMsg('');
-  // },[user,pwd])
-
-  const changeHandler=(e)=>{
+    const changeHandler=(e)=>{
     setlogin({...login, [e.target.name]: e.target.value});
 
   }
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://3.108.252.16:3000/api/auth/Login', login)
+    axios.post(`http://localhost:3000/api/auth/Login`, login)
 
     .then(res => {
      localStorage.setItem('token', res.data.token); 
@@ -42,7 +24,7 @@ export default function Login() {
 
   return(
     <div className='Start'>
-    <h1 className='Welcome'> WELCOME TO ON YOUR OWN!</h1>
+    <h1 className='Welcome'> WELCOME TO HEALTHGUARD!!!</h1>
     <h3>Explore the page by Logging In.</h3>
   <section className='form-container'>
       <h1>Login Here</h1>
