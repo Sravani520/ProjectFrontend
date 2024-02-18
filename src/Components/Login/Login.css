@@ -1,5 +1,7 @@
 body{
-  overflow: hidden;
+  background-image: url('https://static.vecteezy.com/system/resources/thumbnails/005/081/820/small/banner-abstract-geometric-white-and-gray-color-background-illustration-free-vector.jpg');
+  background-size: cover;
+  
 }
 .Welcome{
   position: inherit;
@@ -10,16 +12,21 @@ body{
  h3{
   text-align: center;
   font-size: 1.6rem;
+
 }
 
+.form-background{
+    background-color:aqua
+
+}
 .form-container {
     max-width: 400px;
     max-height: 500px;
+    /* margin: 150px auto; */
     margin-top: 5%;
     margin-left: 35%;
     margin-bottom: 12%;
-    /* background-color: #ab9e9e; */
-    background-color:rgb(49, 48, 48,0.6);
+    background-color: #ab9e9e;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -65,20 +72,54 @@ body{
   }
   
   .form-details button:hover,
-  .regisbtn:hover {
+  .regisbtn {
     color: white;
-    background-color:rgb(49, 48, 48,0.2);
-    transform: scale(0.98);
-    transition: transform 0.4s ease-in-out;
-
+    background-color: rgb(98, 93, 93);
   }
   
+  .form-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+  }
  .Link{
     margin-left: 80px;
     padding: 10px;
     margin-top: 20px;
   }
 
+  .form-details span{
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    margin: 8px;
+    padding: 2px;
+  }
+
+  .instructions{
+    display: none;
+    visibility: hidden;
+  }
+  .hide{
+    display: none;
+    visibility: hidden;
+
+  }
+  .offscreen{
+    display: none;
+    visibility: hidden;
+  }
+  #uidnote,
+  #pwdnote,
+  #confirmnote{
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    padding:10px;
+
+  }
   .relink{
     padding-left: 20%;
     text-decoration: none;
